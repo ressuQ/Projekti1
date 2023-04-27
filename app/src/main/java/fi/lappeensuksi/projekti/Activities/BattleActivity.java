@@ -52,8 +52,8 @@ public class BattleActivity extends AppCompatActivity {
 
                 battlestring=battlestring+(lutemon2.getColor() + "(" + lutemon2.getName() + ") gets killed.\nThe battle is over.");
                 exit = true;
-                storage.getBattleLutemons().remove(lutemon1);
-                storage.getAllLutemons().remove(lutemon1);
+                storage.getBattleLutemons().remove(lutemon2);
+                storage.getAllLutemons().remove(lutemon2);
                 break;
             }
             random=(int)Math.random()*3;
@@ -68,8 +68,8 @@ public class BattleActivity extends AppCompatActivity {
 
                 battlestring=battlestring+(lutemon1.getColor() + "(" + lutemon1.getName() + ") gets killed.\nThe battle is over.");
                 exit = true;
-                storage.getBattleLutemons().remove(lutemon2);
-                storage.getAllLutemons().remove(lutemon2);
+                storage.getBattleLutemons().remove(lutemon1);
+                storage.getAllLutemons().remove(lutemon1);
             }
         }
         System.out.println(battlestring);
